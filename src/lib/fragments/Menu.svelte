@@ -51,7 +51,7 @@
 				</li>
 				<li class="my-4">
 					<a
-						href="/"
+						href="/contact"
 						class="text-white font-black text-5xl md:text-7xl lg:text-8xl hover-gradient"
 						in:fade={{ duration: 300, delay: 200 }}
 						out:fade={{ duration: 300 }}
