@@ -4,17 +4,22 @@
 	import { fade } from 'svelte/transition';
 </script>
 
-<div class="relative w-4 h-4">
+<div class="relative w-16 h-4">
 	<button
-		class={`rounded-full w-4 h-4 absolute z-30 transition-colors duration-300 ${
-			menuOpen ? 'bg-white' : 'bg-black'
+		class={`absolute z-30 flex items-center justify-between inset-0 font-bold transition-colors duration-300 ${
+			menuOpen ? 'text-white' : 'text-black'
 		}`}
 		on:click={() => (menuOpen = !menuOpen)}
 	>
-		<span class="sr-only">Menu</span>
+		<span>menu</span>
+		<div
+			class={`rounded-full block w-4 h-4 z-30 transition-colors duration-300 ${
+				menuOpen ? 'bg-white' : 'bg-black'
+			}`}
+		/>
 	</button>
 	<div
-		class={`absolute inset-0 rounded-full bg-black z-10 w-4 h-4  transition-transform ease-in duration-500 ${
+		class={`absolute top-0 right-0 rounded-full bg-black z-10 w-4 h-4 transition-transform ease-in duration-500 ${
 			menuOpen ? 'scale-[400]' : ''
 		}`}
 	/>
