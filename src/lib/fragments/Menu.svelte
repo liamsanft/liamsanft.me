@@ -21,35 +21,37 @@
 </div>
 
 {#if menuOpen}
-	<nav class={`absolute z-20 inset-0 mt-32 ml-8 flex flex-col`}>
-		<ul>
-			<li class="my-4">
-				<a
-					href="/"
-					class="text-white font-black text-5xl"
-					in:fade={{ duration: 300 }}
-					out:fade={{ duration: 300, delay: 200 }}>home</a
-				>
-			</li>
-			<li class="my-4">
-				<a
-					href="/"
-					class="text-white font-black text-5xl"
-					in:fade={{ duration: 300, delay: 100 }}
-					out:fade={{ duration: 300, delay: 100 }}>work</a
-				>
-			</li>
-			<li class="my-4">
-				<a
-					href="/"
-					class="text-white font-black text-5xl"
-					in:fade={{ duration: 300, delay: 200 }}
-					out:fade={{ duration: 300 }}>get in touch</a
-				>
-			</li>
-		</ul>
-		<a href="/" class="text-white mt-auto mb-8 text-lg" transition:fade={{ duration: 300 }}
-			>imprint</a
-		>
+	<nav class={`absolute z-20 inset-0 flex justify-center`}>
+		<div class="flex flex-col w-[1536px] mx-4 mt-32 ml-10">
+			<ul>
+				<li class="my-4">
+					<a
+						href="/"
+						class="text-white font-black text-5xl md:text-7xl lg:text-8xl"
+						in:fade={{ duration: 300 }}
+						out:fade={{ duration: 300, delay: 200 }}>home</a
+					>
+				</li>
+				<li class="my-4">
+					<a
+						href="/"
+						class="text-white font-black text-5xl md:text-7xl lg:text-8xl"
+						in:fade={{ duration: 300, delay: 100 }}
+						out:fade={{ duration: 300, delay: 100 }}>work</a
+					>
+				</li>
+				<li class="my-4">
+					<a
+						href="/"
+						class="text-white font-black text-5xl md:text-7xl lg:text-8xl"
+						in:fade={{ duration: 300, delay: 200 }}
+						out:fade={{ duration: 300 }}>get in touch</a
+					>
+				</li>
+			</ul>
+			<a href="/" class="text-white mt-auto mb-8 text-lg" transition:fade={{ duration: 300 }}
+				>imprint</a
+			>
+		</div>
 	</nav>
 {/if}
