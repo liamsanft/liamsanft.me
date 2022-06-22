@@ -34,7 +34,7 @@
 				<li class="my-4">
 					<a
 						href="/"
-						class="text-white font-black text-5xl md:text-7xl lg:text-8xl"
+						class="font-black text-5xl md:text-7xl lg:text-8xl hover-gradient"
 						in:fade={{ duration: 300 }}
 						out:fade={{ duration: 300, delay: 200 }}>home</a
 					>
@@ -42,7 +42,7 @@
 				<li class="my-4">
 					<a
 						href="/"
-						class="text-white font-black text-5xl md:text-7xl lg:text-8xl"
+						class="text-white font-black text-5xl md:text-7xl lg:text-8xl hover-gradient"
 						in:fade={{ duration: 300, delay: 100 }}
 						out:fade={{ duration: 300, delay: 100 }}>work</a
 					>
@@ -50,7 +50,7 @@
 				<li class="my-4">
 					<a
 						href="/"
-						class="text-white font-black text-5xl md:text-7xl lg:text-8xl"
+						class="text-white font-black text-5xl md:text-7xl lg:text-8xl hover-gradient"
 						in:fade={{ duration: 300, delay: 200 }}
 						out:fade={{ duration: 300 }}>get in touch</a
 					>
@@ -62,3 +62,31 @@
 		</div>
 	</nav>
 {/if}
+
+<style>
+	.hover-gradient {
+		background-color: #ffffff;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.hover-gradient:hover {
+		background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+		background-size: 400% 400%;
+		animation: gradient 5s ease infinite;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	@keyframes gradient {
+		0% {
+			background-position: 0% 50%;
+		}
+		50% {
+			background-position: 100% 50%;
+		}
+		100% {
+			background-position: 0% 50%;
+		}
+	}
+</style>
