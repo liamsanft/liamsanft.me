@@ -1,7 +1,7 @@
 <script lang="ts">
-	export let menuOpen = false;
-
 	import { fade } from 'svelte/transition';
+
+	let menuOpen = false;
 </script>
 
 <div class="relative w-16 h-8">
@@ -36,15 +36,17 @@
 						href="/"
 						class="font-black text-5xl md:text-7xl lg:text-8xl hover-gradient"
 						in:fade={{ duration: 300 }}
-						out:fade={{ duration: 300, delay: 200 }}>home</a
+						out:fade={{ duration: 300, delay: 200 }}
+						on:click={() => (menuOpen = !menuOpen)}>home</a
 					>
 				</li>
 				<li class="my-4">
 					<a
-						href="/"
+						href="/work"
 						class="text-white font-black text-5xl md:text-7xl lg:text-8xl hover-gradient"
 						in:fade={{ duration: 300, delay: 100 }}
-						out:fade={{ duration: 300, delay: 100 }}>work</a
+						out:fade={{ duration: 300, delay: 100 }}
+						on:click={() => (menuOpen = !menuOpen)}>work</a
 					>
 				</li>
 				<li class="my-4">
@@ -52,12 +54,16 @@
 						href="/"
 						class="text-white font-black text-5xl md:text-7xl lg:text-8xl hover-gradient"
 						in:fade={{ duration: 300, delay: 200 }}
-						out:fade={{ duration: 300 }}>get in touch</a
+						out:fade={{ duration: 300 }}
+						on:click={() => (menuOpen = !menuOpen)}>get in touch</a
 					>
 				</li>
 			</ul>
-			<a href="/" class="text-white mt-auto mb-8 text-lg" transition:fade={{ duration: 300 }}
-				>imprint</a
+			<a
+				href="/"
+				class="text-white mt-auto mb-8 text-lg"
+				transition:fade={{ duration: 300 }}
+				on:click={() => (menuOpen = !menuOpen)}>imprint</a
 			>
 		</div>
 	</nav>

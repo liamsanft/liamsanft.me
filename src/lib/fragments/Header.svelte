@@ -2,10 +2,10 @@
 	import { Menu } from '$lib/fragments';
 </script>
 
-<div class="absolute w-full h-full overflow-hidden">
-	<header class="flex justify-center items-center h-12">
+<div class="absolute w-full h-full overflow-hidden pointer-events-none">
+	<header class="flex justify-center items-center h-12 pointer-events-auto">
 		<div class="w-[1536px] flex justify-between items-center mx-3">
-			<a href="/"><h1 class="font-bold">liamsanft.me</h1></a>
+			<a href="/" class="font-bold">liamsanft.me</a>
 			<Menu />
 		</div>
 	</header>
