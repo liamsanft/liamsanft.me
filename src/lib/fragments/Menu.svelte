@@ -60,10 +60,10 @@
 				</li>
 			</ul>
 			<a
-				href="/"
+				href="/legal-notice"
 				class="text-white mt-auto mb-8 text-lg"
 				transition:fade={{ duration: 300 }}
-				on:click={() => (menuOpen = !menuOpen)}>imprint</a
+				on:click={() => (menuOpen = !menuOpen)}>legal notice</a
 			>
 		</div>
 	</nav>
