@@ -1,3 +1,7 @@
+<script lang="ts" context="module">
+	export let prerender = true;
+</script>
+
 <script lang="ts">
 	import { Header } from '$lib/fragments';
 </script>
